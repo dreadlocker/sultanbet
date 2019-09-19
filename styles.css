@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#desktop,
+#mobile {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #202122
+}
+
+.nav,
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  color: #C6C6C6;
+  max-width: 100%;
+  background-color: black;
+  height: 6%;
+  padding: 0 1rem;
+}
+
+.links {
+  width: 50%;
+  align-items: center;
+}
+
+.links,
+.btn1,
+.btn2,
+.body {
+  color: #F8F8F8;
+}
+
+.btn1,
+.btn2 {
+  border: 2px solid #518335;
+  border-radius: 4px;
+  height: 2rem;
+  padding: 0.5rem
+}
+
+.btn1 {
+  background-color: transparent;
+  margin-right: 1rem;
+}
+
+.btn2,
+.body {
+  background-color: #518335;
+}
+
+.buttons {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.body {
+  padding: 1rem;
+}
+
+#mobile {
+  display: none;
+}
+
+@media only screen and (orientation: portrait) {
+  #desktop {
+    display: none;
+  }
+  #mobile {
+    display: block;
+  }
+  body {
+    color: #FEFEFE;
+  }
+  #exitMenu {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navMobile {
+    width: 100%;
+    height: 6%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 2px solid #518335;
+  }
+  #lines {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+  }
+  #lines::before {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: inherit;
+    transform: rotate(90deg);
+  }
+  .buttonsMobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .btn2Mob {
+    margin-left: 1rem;
+    color: #518335;
+  }
+  .sideMenu {
+    width: 21rem;
+    height: 94%;
+    background-color: #252525;
+  }
+  .padLeft {
+    padding-left: 1rem;
+  }
+  .row {
+    width: 100%;
+    display: inline-flex;
+    border-bottom: 1px solid #393a3c;
+    padding: 0 1rem;
+  }
+  .leftSide {
+    width: 50%;
+    display: inline-flex;
+  }
+  .rightSide {
+    width: 50%;
+    color: #518335;
+    text-align: right;
+  }
+  .icon {
+    width: 1.7rem;
+  }
+  .padWithoutRight {
+    padding: 1rem 0 1rem 1rem;
+    opacity: 0.3;
+  }
+  .active {
+    opacity: 1;
+  }
+  .buttonsMob {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .btn1,
+  .btn2 {
+    width: 8rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
